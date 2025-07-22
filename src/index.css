@@ -22,12 +22,12 @@ body {
   color: var(--text-color);
 }
 
-h1, h2, h3 {
+h1, h2, h3, p {
   font-family: 'Playfair Display', serif;
 }
 
 section {
-  padding: 8rem 2rem;
+  padding: 8rem 2rem 4rem 2rem;
   min-height: 80vh; 
   display: flex;
   flex-direction: column;
@@ -39,7 +39,7 @@ section {
 }
 
 section:nth-of-type(odd) {
-  background-color: #f8f8f8;
+  background-color: #e6e6e6;
 }
 
 section:nth-of-type(even) {
@@ -73,7 +73,7 @@ section h2::after {
   height: 20rem;
   overflow: hidden;
   margin-top: .5rem;
-  margin-bottom: 37px;
+  margin-bottom: 30px;
   border-radius: 50%;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
@@ -86,4 +86,34 @@ section h2::after {
   transform: scale(1.7);
   object-position: center 75%; 
   transition: transform 0.4s ease;
+}
+
+.aboutP{
+  max-width: 65%;
+}
+
+.aboutP p{
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+.socials{
+  padding: 0 2rem;
+}
+
+.socials a{
+  padding: 0;
+  margin: 1.5rem 1rem;
+  display: inline-block;
+}
+
+.socials a svg{
+    transition: transform 0.3s ease, fill 0.3s ease;
+      fill: #9F8469;
+}
+
+.socials a:hover svg{
+  fill: #CAB69D;
+  transform: scale(1.2);
 }
