@@ -1,3 +1,4 @@
+/*General Styling*/
 :root {
   --text-color: #1a1c20;
   --link-color: #ffffff;
@@ -14,21 +15,26 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 5rem;
+  overscroll-behavior-x: none;
 }
 
 body {
-  font-family: 'Mynerve', cursive;
+  font-family: "Mynerve", cursive;
   background-color: var(--background-color);
   color: var(--text-color);
+  overscroll-behavior-x: none;
 }
 
-h1, h2, h3, p {
-  font-family: 'Playfair Display', serif;
+h1,
+h2,
+h3,
+p {
+  font-family: "Playfair Display", serif;
 }
 
 section {
   padding: 8rem 2rem 4rem 2rem;
-  min-height: 80vh; 
+  min-height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -39,11 +45,11 @@ section {
 }
 
 section:nth-of-type(odd) {
-  background-color: #e6e6e6;
+  background-color: #ffffff;
 }
 
 section:nth-of-type(even) {
-  background-color: #ffffff;
+  background-color: #e6e6e6;
 }
 
 section h2 {
@@ -56,11 +62,11 @@ section h2 {
 }
 
 section h2::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 150px;
   height: 4px;
-  background-color: #9F8469;
+  background-color: #9f8469;
   background-color: rgba(159, 132, 105, 0.85);
   bottom: -12px;
   left: 50%;
@@ -68,11 +74,12 @@ section h2::after {
   border-radius: 2px;
 }
 
+/*About Section*/
 .profile {
   width: 20rem;
   height: 20rem;
   overflow: hidden;
-  margin-top: .5rem;
+  margin-top: 0.5rem;
   margin-bottom: 30px;
   border-radius: 50%;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
@@ -84,36 +91,118 @@ section h2::after {
   border-radius: 50%;
   object-fit: cover;
   transform: scale(1.7);
-  object-position: center 75%; 
-  transition: transform 0.4s ease;
+  object-position: center 75%;
 }
 
-.aboutP{
+.aboutP {
   max-width: 65%;
 }
 
-.aboutP p{
+.aboutP p {
   font-size: 17px;
   font-weight: 300;
   line-height: 1.6;
 }
 
-.socials{
+.socials {
   padding: 0 2rem;
 }
 
-.socials a{
+.socials a {
   padding: 0;
   margin: 1.5rem 1rem;
   display: inline-block;
 }
 
-.socials a svg{
-    transition: transform 0.3s ease, fill 0.3s ease;
-      fill: #9F8469;
+.socials a svg {
+  transition: transform 0.3s ease, fill 0.3s ease;
+  fill: #9f8469;
 }
 
-.socials a:hover svg{
-  fill: #CAB69D;
+.socials a:hover svg {
+  fill: #cab69d;
   transform: scale(1.2);
+}
+
+/*Projects Section*/
+#project .header {
+  margin-bottom: 4rem;
+}
+
+.container{
+  width: 100%;
+  overflow-x: hidden;
+  overscroll-behavior-x: contain;
+}
+
+.projects {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 1rem;
+  gap: 1.5rem;
+  padding: 1rem;
+  margin: 0 auto;
+  max-width: 100vw;
+  scroll-behavior: smooth;
+}
+
+.pCard{
+  padding: 0 2rem;
+}
+
+/*Media Section*/
+@media(max-width: 480px){
+
+  section h2{
+    font-size: 1.5rem;
+  }
+
+  section h2::after{
+    width: 90px;
+  }
+
+  .profile{
+    width: 14rem;
+    height: 14rem;
+    margin-bottom: 18px;
+  }
+
+  .aboutP{
+    max-width: 90%;
+     padding: 0 0.2rem;
+  }
+
+  .aboutP p{
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1024px) {
+  section h2 {
+    font-size: 2rem;
+  }
+
+  section h2::after {
+    width: 120px;
+  }
+
+  .profile {
+    width: 16rem;
+    height: 16rem;
+    margin-bottom: 24px;
+  }
+
+  .aboutP {
+    max-width: 85%;
+    padding: 0 1rem;
+  }
+
+  .aboutP p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.6;
+  }
 }
