@@ -151,6 +151,11 @@ section h2::after {
   padding: 0 2rem;
 }
 
+.swipe{
+  font-family: "Mynerve", cursive;
+  font-size: 18px;
+}
+
 /*Skills Section*/
 .skills-container {
   margin: 2rem 2rem 0rem 2rem;

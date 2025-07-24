@@ -144,7 +144,9 @@ function App() {
               />
             </div>
           </div>
+          
         </div>
+        <p className="swipe">&lt;~ Swipe ~&gt;</p>
       </section>
 
       <section id="skills">
