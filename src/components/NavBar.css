@@ -45,7 +45,8 @@ nav .right a:hover {
     padding: 0.5rem 1rem;
   }
 
-  nav .left, nav .right {
+  nav .left,
+  nav .right {
     margin: 0.3rem 0;
   }
 
