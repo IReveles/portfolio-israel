@@ -66,8 +66,8 @@ section h2::after {
   position: absolute;
   width: 150px;
   height: 4px;
-  background-color: #9f8469;
-  background-color: rgba(159, 132, 105, 0.85);
+  background-color: #cab69d;
+  background-color: rgba(202, 182, 157, 0.9);
   bottom: -12px;
   left: 50%;
   transform: translateX(-50%);
@@ -119,7 +119,7 @@ section h2::after {
   fill: #9f8469;
 }
 
-.socials a:hover svg {
+.socials a:hover svg{
   fill: #cab69d;
   transform: scale(1.2);
 }
@@ -129,7 +129,7 @@ section h2::after {
   margin-bottom: 4rem;
 }
 
-.container{
+.container {
   width: 100%;
   overflow-x: hidden;
   overscroll-behavior-x: contain;
@@ -147,33 +147,103 @@ section h2::after {
   scroll-behavior: smooth;
 }
 
-.pCard{
+.pCard {
   padding: 0 2rem;
 }
 
-/*Media Section*/
-@media(max-width: 480px){
+/*Skills Section*/
+.skills-container{
+  margin: 2rem 2rem 0rem 2rem;
+  display: inline;
+  align-items: center;
+  max-width: 750px;
+}
 
-  section h2{
+#skills h3{
+  font-family: 'Mynerve', cursive;
+  margin-top: 3rem;
+}
+
+.skill {
+  font-size: 50px;
+  color: #9f8469;
+  margin: 0 .9rem;
+  margin-bottom: .8rem;
+  transition: color 0.3 ease;
+}
+
+.skill-img{
+  width: 3.15rem;
+  height: 3.15rem;
+  margin: 0 .75rem;
+  margin-bottom: .8rem;
+  fill: #9f8469;
+  transition: fill 0.3s ease;
+}
+
+.skill:hover{
+  color: #cab69d;
+}
+
+.skill-img:hover{
+  fill: #cab69d;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.tooltiptext {
+  visibility: hidden;
+  width: max-content;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 4px 8px;
+  border-radius: 4px;
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+  font-size: 0.75rem;
+  pointer-events: none; 
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*Leave a Message Section*/
+
+
+/*Media Section*/
+@media (max-width: 480px) {
+  section h2 {
     font-size: 1.5rem;
   }
 
-  section h2::after{
+  section h2::after {
     width: 90px;
   }
 
-  .profile{
+  .profile {
     width: 14rem;
     height: 14rem;
     margin-bottom: 18px;
   }
 
-  .aboutP{
+  .aboutP {
     max-width: 90%;
-     padding: 0 0.2rem;
+    padding: 0 0.2rem;
   }
 
-  .aboutP p{
+  .aboutP p {
     font-size: 15px;
     font-weight: 400;
     line-height: 1.5;

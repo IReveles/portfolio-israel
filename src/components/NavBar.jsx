@@ -12,7 +12,7 @@ export default function NavBar() {
                 <a href="#about">About</a>
                 <a href="#project">Projects</a>
                 <a href="#skills">Skills</a>
-                <a href="">Leave a message</a>
+                <a href="#message">Leave a message</a>
             </div>
         </nav>
     </>
