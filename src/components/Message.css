@@ -43,8 +43,7 @@ textarea {
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
-.eform button:hover,
-.eform button:active {
+.eform button:hover {
   color: var(--link-color);
   transform: scale(1.1);
 }
@@ -96,6 +95,6 @@ textarea {
   }
 
   .eform input {
-    width: 135px;
+    width: 119px;
   }
 }
