@@ -22,7 +22,7 @@ import { FaGitAlt } from "react-icons/fa";
 import { GrMysql } from "react-icons/gr";
 import { SiPostman } from "react-icons/si";
 import { SiFigma } from "react-icons/si";
-import resume from "./assets/resume.pdf";
+import resume from "./assets/Israel.pdf";
 function App() {
   return (
     <>
