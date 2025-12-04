@@ -14,6 +14,8 @@ import { SiJavascript } from "react-icons/si";
 import { FaJava } from "react-icons/fa";
 import { SiHtml5 } from "react-icons/si";
 import { SiCss3 } from "react-icons/si";
+import { SiReact } from "react-icons/si";
+import { SiShadcnui } from "react-icons/si";
 import { SiVuedotjs } from "react-icons/si";
 import { SiVuetify } from "react-icons/si";
 import { SiSequelize } from "react-icons/si";
@@ -191,6 +193,14 @@ function App() {
         </div>
         <h3 className="skill-section">Frameworks & Libraries</h3>
         <div className="skills-container">
+          <span className="tooltip">
+            <SiReact className="skill" />
+            <span className="tooltiptext">React</span>
+          </span>
+          <span className="tooltip">
+            <SiShadcnui className="skill" />
+            <span className="tooltiptext">ShadCn</span>
+          </span>
           <span className="tooltip">
             <SiVuedotjs className="skill" />
             <span className="tooltiptext">Vue</span>
